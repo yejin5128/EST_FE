@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 3px;
+      }
+
+      .grid-container img {
+        width: 100px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+
+      .grid-container2 {
+        padding-top: 3px;
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 3px;
+      }
+
+      div:nth-of-type(2) img {
+        width: 100px;
+        aspect-ratio: 2/1;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <img src="../src/img/weniv-binky.png" alt="" />
+      <img src="../src/img/weniv-chilli.png" alt="" />
+      <img src="../src/img/weniv-garry.png" alt="" />
+      <img src="../src/img/weniv-licat.png" alt="" />
+      <img src="../src/img/weniv-suri.png" alt="" />
+      <img src="../src/img/weniv-wade.png" alt="" />
+    </div>
+    <div class="grid-container2">
+      <img src="../src/img/weniv-binky.png" alt="" />
+      <img src="../src/img/weniv-chilli.png" alt="" />
+      <img src="../src/img/weniv-garry.png" alt="" />
+      <img src="../src/img/weniv-licat.png" alt="" />
+      <img src="../src/img/weniv-suri.png" alt="" />
+      <img src="../src/img/weniv-wade.png" alt="" />
+    </div>
+  </body>
+</html>

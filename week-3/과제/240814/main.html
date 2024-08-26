@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main</title>
+  </head>
+  <style>
+    .sr-only {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <header>
+      <h1><a href=""></a></h1>
+      <div>
+        <p>환영합니다 <strong>닉네임</strong>님!</p>
+        <button type="button">로그아웃</button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2>의 비밀일기</h2>
+        <form action="">
+          <input type="text" id="title" name="title" placeholder="제목" />
+          <textarea
+            id="diary"
+            name="diary"
+            placeholder="오늘의 비밀은 무엇인가요?"
+          ></textarea>
+          <button type="submit">작성하기</button>
+        </form>
+      </section>
+      <section>
+        <h2 class="sr-only">일기 목록</h2>
+        <ol>
+          <li>
+            <article>
+              <h3></h3>
+              <time datetime=""></time>
+              <p></p>
+            </article>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
