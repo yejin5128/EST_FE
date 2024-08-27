@@ -1,0 +1,5 @@
+# 파일 제외
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
