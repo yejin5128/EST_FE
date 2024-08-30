@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background-color: aqua;
+        width: calc(100% - 60px);
+        /* 크기를 줄이면 90%값이 더 적어서 선택됨 */
+        width: min(600px, 90%);
+        width: max(600px, 90%);
+        height: 200px;
+        margin: auto;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        background-color: blueviolet;
+        float: left;
+        width: calc(calc(100% - 100px) / 3);
+        /* 선호값보다 1번보다 적어지면 1번, 3번보다 커지면 3번채택 */
+        font-size: clamp(1rem, 2.5w, 3rem);
+      }
+
+      li:not(:first-child) {
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      voluptates repudiandae officia, ipsum obcaecati quisquam recusandae
+      nesciunt beatae. Eos ipsa eligendi sunt, temporibus minima illo commodi
+      saepe perferendis dolor beatae!
+    </div>
+    <ul>
+      <li>1. 눈 뜨기</li>
+      <li>2. 일어나기</li>
+      <li>3. 밥 먹기</li>
+    </ul>
+  </body>
+</html>

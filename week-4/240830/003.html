@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-areas:
+          "a b"
+          "a c";
+      }
+
+      section {
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .section1 {
+        background-color: salmon;
+        grid-area: a;
+      }
+
+      .section2 {
+        background-color: gold;
+        grid-area: b;
+      }
+
+      .section3 {
+        background-color: royalblue;
+        grid-area: c;
+      }
+
+      @media (min-width: 501px) and (max-width: 768px) {
+        main {
+          grid-template-areas:
+            "a b"
+            "b c";
+        }
+      }
+
+      @media (max-width: 500px) {
+        main {
+          grid-template-areas:
+            "a"
+            "b"
+            "c";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="section1">1</section>
+      <section class="section2">2</section>
+      <section class="section3">3</section>
+    </main>
+  </body>
+</html>

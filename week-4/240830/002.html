@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media (min-width: 640px) and (max-width: 800px) {
+        body {
+          font-size: 4rem;
+        }
+      }
+
+      @media not screen and (max-width: 800px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      /* 세로 방향 */
+      /* @media (orientation: landscape) {
+        body {
+          background-color: gold;
+        }
+      }
+
+      @media (orientation: portrait) {
+        body {
+          background-color: lightcoral;
+        }
+      } */
+
+      /* 700 이상이거나, 뷰포인트의 방향이 가로 일 때 */
+      @media (min-width: 700px), (orientation: landscape) {
+        body {
+          background-color: rosybrown;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    안녕하세요.
+  </body>
+</html>
