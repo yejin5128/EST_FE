@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- 마진 패딩 폰트웨이트 텍스트컬러 -->
+
+    <div>hello world</div>
+    <div class="text-base">hello world</div>
+    <div class="text-lg">hello world</div>
+    <div class="text-xl">hello world</div>
+    <div class="text-2xl">hello world</div>
+
+    <!-- 패딩 16씩 들어감 0.25rem -->
+    <div class="text-2xl p-4 bg-red-200">hello world</div>
+    <!-- padding-top -->
+    <div class="text-2xl pt-4 bg-red-200">hello world</div>
+    <div class="text-2xl pb-4 bg-red-200">hello world</div>
+    <div class="text-2xl pr-4 bg-red-200">hello world</div>
+    <div class="text-2xl pl-4 bg-red-200">hello world</div>
+
+    <!-- 마진 병합 현상 -->
+    <div class="text-2xl m-4 bg-red-200">hello world</div>
+    <div class="text-2xl mb-4 bg-red-200">hello world</div>
+    <div class="text-2xl mt-4 bg-red-200">hello world</div>
+
+    <div class="text-2xl my-4 bg-red-200">hello world</div>
+
+    <!-- y축으로 내부 영역 지정 -->
+    <div class="space-y-4">
+      <div class="bg-gray-200">hello world</div>
+      <div class="bg-gray-200">hello world</div>
+      <div class="bg-gray-200">hello world</div>
+    </div>
+
+    <div class="space-x-4">
+      <div class="bg-gray-200">hello world</div>
+      <div class="bg-gray-200">hello world</div>
+      <div class="bg-gray-200">hello world</div>
+    </div>
+
+    <div class="p-5 bg-blue-200">
+      <ul>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+      </ul>
+    </div>
+
+    <!-- css 초기화전 ul 스타일/ 다른 리스트 스타일도 가능 -->
+    <div class="p-5 bg-blue-200">
+      <ul class="list-disc">
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+      </ul>
+    </div>
+    <div class="p-5 bg-blue-200">
+      <ul>
+        <li class="list-disc">hello world</li>
+        <li class="list-disc">hello world</li>
+        <li class="list-disc">hello world</li>
+      </ul>
+    </div>
+    <div class="p-5 bg-blue-200">
+      <ol>
+        <li class="list-disc">hello world</li>
+        <li class="list-disc">hello world</li>
+        <li class="list-disc">hello world</li>
+      </ol>
+    </div>
+
+    <!-- 1. border Radius -->
+    <div class="w-40 h-40 bg-red-200"></div>
+    <br />
+    <div class="w-40 h-40 bg-red-200 rounded"></div>
+    <br />
+    <!-- 2번째보다 좀더 모서리가 깍임 -->
+    <div class="w-40 h-40 bg-red-200 rounded-lg"></div>
+    <br />
+    <div class="w-40 h-40 bg-red-200 rounded-full"></div>
+    <br />
+
+    <!-- 2. 커스텀 스타일(대괄호 사용)-->
+    <div class="text-[17px]">hello world</div>
+    <div class="mt-[17px]">hello world</div>
+    <div class="bg-[#4357b2]">hello world</div>
+  </body>
+</html>

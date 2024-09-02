@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- 부모요소에 flex로 정렬 -->
+    <div class="flex">
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+    </div>
+
+    <!-- gap도 0.25rem -->
+    <div class="flex gap-4">
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+    </div>
+
+    <div class="flex gap-4 flex-col">
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+    </div>
+
+    <div class="flex gap-4 flex-wrap">
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+    </div>
+
+    <!-- 가운데 정렬 -->
+    <div class="w-32 h-32 bg-red-200 flex justify-center items-center">
+      <div class="bg-blue-200">item</div>
+    </div>
+
+    <!-- 중단점 설정 -->
+    <div class="flex md:flex-row flex-col">
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+      <div class="bg-blue-200">item</div>
+    </div>
+  </body>
+</html>
