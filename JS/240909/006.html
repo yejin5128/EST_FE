@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = "haha"; // 전역 스코프
+
+      function func() {
+        var b = "hello"; // 지역 스코프 중 함수 스코프
+        console.log(a);
+        console.log(b);
+      }
+      func();
+
+      // let과 const 스코프 -> 지역 스코프(블록 스코프)
+      // 코드 블록: {}
+      if (true) {
+        let c = 30; // 지역 스코프(블록 스코프)
+        console.log(c);
+
+        var d = 40; // 전역 스코프
+      }
+      // console.log(c);
+      console.log(d);
+    </script>
+  </body>
+</html>

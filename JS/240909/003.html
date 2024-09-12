@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./003.js"></script>
+    <script>
+      // [변수 선언 규칙]
+      // 변수 선언 키워드(var, let, const) 변수이름
+
+      const name = "yejin"; // 할당
+      console.log(name); // 참조
+
+      // 변수 선언 키워드 미사용시 var와 비슷하게 동작함
+      age = "20";
+      console.log(age);
+
+      // 변수를 다른 변수에 할당
+      let x = 10;
+      let y = x;
+      let z = y;
+      x = 5;
+      console.log("x", x);
+      console.log("y", y);
+      console.log("z", z);
+
+      // 재할당 -> 새로운 공간에 5를 넣고 가르키는 형식
+      let a = 10;
+      a = 5;
+    </script>
+  </body>
+</html>

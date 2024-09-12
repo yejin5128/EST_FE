@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 변수 키워드 var let const
+      // 1. var: 변경가능한 변수를 선언
+      var name = "아리";
+      name = "하티";
+      console.log(name);
+
+      // 재선언 가능
+      var name = "nas";
+      console.log(name);
+
+      // var를 이용해서 선언한 것처럼 동작, 엄격모드에서는 동작 X
+      age = 30;
+
+      // ES6 - let, const 키워드가 도입
+      // 2. let 재할당은 가능하지만, 재선언은 안된다.
+      let company = "dnlslqm";
+      company = "dsf";
+
+      // let company = "dfs";
+
+      // 3. const - 선언과 동시 할당, 재할당이 불가능하기 때문, 재선언 불가
+      // 주로 상수 선언, 다른 변수 선언 키워드에 비해 안전성이 있음.
+      const gender = "F";
+
+      // 정리
+      // 변경 불필요 -> const
+      // 변경 필요 -> let
+    </script>
+  </body>
+</html>
