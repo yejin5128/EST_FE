@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,26 +7,33 @@
   </head>
   <body>
     <script>
-      // 원시타입
-      let name = "name";
-      console.log(name[0]);
+      // var의 스코프
+      var a = "weniv"; // 전역 스코프
 
-      name[0] = "k";
-      console.log(name); // 불변성, 위의 코드는 무시됨.
+      function func() {
+        var a = "fe";
+        var b = "hello"; // 지역 스코프(함수 스코프)
+        console.log(a);
+        console.log(window.a); // 전역 변수 -> 어디서든 접근이 가능
+        // 브라우저 전역객체 window / 노드 환경은 global
+        console.log(b);
+      }
+      func();
 
-      // 문자열
-      let s1 = "문자열1";
-      let s2 = "문자열2";
-      let s3 = `문자열3`;
+      // console.log(b);
 
-      // I'm oo
-      str1 = "I'm HATI";
+      // let과 const 스코프 -> 지역 스코프(블록 스코프)
+      // 코드 블럭: {}
 
-      const str =
-        "문자열은 작은따옴표(''), 큰따옴표(\"\"),백틱(\`\`)으로 \n둘러싼 일련의 문자를 가르킵니다.";
-      console.log(str);
+      // 조건문, 반복문
+      if (true) {
+        let c = 30; // 지역 스코프(블록 스코프)
+        console.log(c);
 
-      console.log("제 이름은 " + name2 + "이고 나이는" + age + "입니다.");
+        var d = 40; // 전역 스코프
+      }
+      // console.log(c);
+      console.log(d); // 40
     </script>
   </body>
 </html>

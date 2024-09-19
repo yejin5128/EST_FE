@@ -1,1 +1,1 @@
-console.log("outer script");
+console.log("Hello Outer Script");

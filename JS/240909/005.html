@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,33 +7,42 @@
   </head>
   <body>
     <script>
-      // 변수 키워드 var let const
-      // 1. var: 변경가능한 변수를 선언
-      var name = "아리";
-      name = "하티";
-      console.log(name);
+      // 변수명 작성 규칙
+      // 변수 선언: 변수키워드 변수이름
 
-      // 재선언 가능
-      var name = "nas";
-      console.log(name);
+      // 1. 변수이름은 문자, 숫자, 특수문자(_, $)
+      let name123$_;
+      // let name?;
 
-      // var를 이용해서 선언한 것처럼 동작, 엄격모드에서는 동작 X
-      age = 30;
+      // 2. 숫자로 시작할 수는 없다
+      let name12;
+      //let 12name;
+      let $_score;
 
-      // ES6 - let, const 키워드가 도입
-      // 2. let 재할당은 가능하지만, 재선언은 안된다.
-      let company = "dnlslqm";
-      company = "dsf";
+      // 3. 예약어들은 사용할 수 없다.
+      // const var;
 
-      // let company = "dfs";
+      // 4. 자바스크립트는 대소문자를 구분
+      let name, NAME, Name;
+      name = "name";
+      NAME = "NAME";
+      Name = "Name";
+      console.log(name, NAME, Name);
+      let VAR = "VAR";
+      console.log(VAR);
 
-      // 3. const - 선언과 동시 할당, 재할당이 불가능하기 때문, 재선언 불가
-      // 주로 상수 선언, 다른 변수 선언 키워드에 비해 안전성이 있음.
-      const gender = "F";
+      // 변수명 작성 관습 -> 코딩 컨벤션
+      // 1. 변수나 함수의 이름은 카멜케이스(camelCase)
+      // 사용자의 이름
+      let userName;
+      let user_name; //snake_case
 
-      // 정리
-      // 변경 불필요 -> const
-      // 변경 필요 -> let
+      // 2. 비공개 속성이나 함수 내부의 변수 (외부에 공개, private)
+      let _private;
+
+      // 3. 클래스 이름은 파스칼케이스(PascalCase)
+      // 사용자의 정보
+      class UserInfo
     </script>
   </body>
 </html>
